@@ -5,7 +5,6 @@ export default function DocToolbar() {
   const [docs, setDocs] = useState<Doc[]>([]);
   return (
     <>
-      <p>Count: {docs.length}</p>
       <label htmlFor="doc-upload" className="upload-btn">
         Upload doc
       </label>
@@ -16,7 +15,6 @@ export default function DocToolbar() {
         id="doc-upload"
         onChange={(e) => {
           const file = e.target.files?.[0];
-          console.log(file);
           if (!file) return;
           const newDoc: Doc = {
             id: crypto.randomUUID(),
