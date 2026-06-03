@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  min-height: 60vh;
+}
+
+.docViewer {
+  flex: 2;
+}
+
+.chatPanel {
+  flex: 1;
+}
