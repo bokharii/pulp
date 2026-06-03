@@ -27,7 +27,7 @@ export default function DocToolbar() {
         }}
       ></input>
       {docs.map((doc) => (
-        <span key={doc.id} className="doc-pill">{doc.name}</span>
+        <span key={doc.id} className="doc-name">{doc.name}</span>
       ))}
     </>
   );

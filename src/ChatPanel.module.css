@@ -1,0 +1,16 @@
+.chatPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.message {
+  max-width: 80%;
+  padding: 12px;
+  border-radius: 12px;
+}
+.user {
+  align-self: flex-end;
+}
+.assistant {
+  align-self: flex-start;
+}
