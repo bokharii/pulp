@@ -1,8 +1,6 @@
-import { useState } from "react";
 import type { Doc } from "./types";
 
-export default function DocToolbar() {
-  const [docs, setDocs] = useState<Doc[]>([]);
+export default function DocToolbar({docs, handleUpload}) {
   return (
     <>
       <label htmlFor="doc-upload" className="upload-btn">
