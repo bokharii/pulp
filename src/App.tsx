@@ -9,8 +9,9 @@ function App() {
   // what state will app own?
   // what children need which pieces
   const [docs, setDocs] = useState<Doc[]>([]);
-  function handleUpload(file: File){
-    const newDoc: Doc = {id: '', name: file.name, content: ""}
+  async function handleUpload(file: File){
+    const fileText = await file.text();
+    const newDoc: Doc = {id: crypto.randomUUID(), name: file.name, content: fileText}
     setDocs(prev => [...prev, newDoc])
   }
   return (
